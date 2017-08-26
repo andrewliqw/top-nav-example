@@ -1,0 +1,32 @@
+{
+  "name": "front-end-dev-test",
+  "version": "1.0.0",
+  "description": "Front end developer test",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "keywords": [
+    "front",
+    "end",
+    "dev",
+    "test"
+  ],
+  "author": "Jim Doyle",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-flatten": "^0.3.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-webserver": "^0.9.1",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "rename": "^1.0.3",
+    "verge": "^1.9.1"
+  }
+}

@@ -1,0 +1,20 @@
+$icon-font-path: "../../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "bootstrap";
+
+@import "../../TopNav/scss/topnav.scss";
+
+body {
+  padding-top: 50px;
+}
+
+
+// style guide styles
+.sg-titleBox {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.sg-title {
+    color: rgb(69.8%, 13.3%, 13.3%);
+}
