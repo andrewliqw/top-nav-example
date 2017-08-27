@@ -18,7 +18,12 @@ gulp.task('js', function() {
     .pipe(concat('app.js'))
     .pipe(gulp.dest('dist'));
 });
- 
+
+gulp.task('fonts', function() {
+  return gulp.src('assets/*.ttf')
+    .pipe(gulp.dest('dist/css'));
+});
+
 gulp.task('sass', function () {
   return gulp.src('./app/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -37,7 +42,7 @@ gulp.task('watch', function () {
 });
 
 
-gulp.task('default', ['lint', 'sass', 'hbs', 'js'], function() {
+gulp.task('default', ['lint', 'sass', 'hbs', 'js', 'fonts'], function() {
     // Add tests here
 })
 
