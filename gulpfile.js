@@ -54,10 +54,10 @@ gulp.task('hbs', function () {
         
     },
     options = {
-        batch : ['./app/TopNav/hbs/']
+        batch : ['./app/topnav/hbs/']
     }
  
-    return gulp.src('app/Global/hbs/TopNavExample.handlebars')
+    return gulp.src('app/global/hbs/TopNavExample.handlebars')
         .pipe(handlebars(templateData, options))
         .pipe(rename('top-nav-example.html'))
         .pipe(gulp.dest('dist'));
