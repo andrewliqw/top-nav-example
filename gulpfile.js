@@ -37,7 +37,7 @@ gulp.task('watch', function () {
 });
 
 
-gulp.task('default', ['lint', 'sass', 'hbs'], function() {
+gulp.task('default', ['lint', 'sass', 'hbs', 'js'], function() {
     // Add tests here
 })
 
