@@ -20,7 +20,7 @@
 		        ,oneHour: oneHour
 		        ,oneDay: oneDay
                 ,oneYear: oneYear
-            }
+            };
         }
 
         /*
@@ -39,7 +39,7 @@
                 ,mins: mins
                 ,hours: hours
                 ,days: days
-            }
+            };
         }
 
 
@@ -111,8 +111,8 @@
 		            }
 		        }
 		        // leave special words alone
-		        for (var i = 0; i < ucWords.length; i++) {
-		            if (txt === ucWords[i]) return txt;
+		        for (var j = 0; j < ucWords.length; j++) {
+		            if (txt === ucWords[j]) return txt;
 		        }
 		        wordCount++;
 
@@ -191,7 +191,7 @@
 
             return lines;
         }
-    }
+    };
 
     // exposes library for browser and Node-based code (such as unit tests)
     if (typeof window === "undefined") {

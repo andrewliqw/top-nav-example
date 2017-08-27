@@ -44,7 +44,7 @@ gulp.task('watch', function () {
 
 gulp.task('default', ['lint', 'sass', 'hbs', 'js', 'fonts'], function() {
     // Add tests here
-})
+});
 
 gulp.task('lint', function() {
   return gulp.src(['./app/**/*.js', 'gulpfile.js'])
@@ -60,7 +60,7 @@ gulp.task('hbs', function () {
     },
     options = {
         batch : ['./app/topnav/hbs/']
-    }
+    };
  
     return gulp.src('app/global/hbs/TopNavExample.handlebars')
         .pipe(handlebars(templateData, options))
