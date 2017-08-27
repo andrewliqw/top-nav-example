@@ -48,7 +48,10 @@
             var isMb = isMobileVP();
 
             evenNav.clearClasses(el, !isMb);
-            if(!isMb) evenNav.resize(el, !isMb);
+            if(!isMb) {
+                evenNav.resize(el, !isMb);
+                el.classList.remove('is-calc');
+            }
         });
     }
 

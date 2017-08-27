@@ -66,12 +66,12 @@
   &-btninner {
     .is-ready & {
       display: inline-block;
-      position: absolute;
-      top: 50%;
-      left: 6px;
-      right: 6px;
-      padding: 12px 0;
-      transform: translateY(-50%);
+      // position: absolute;
+      // top: 50%;
+      // left: 6px;
+      // right: 6px;
+      // padding: 12px 0;
+      // transform: translateY(-50%);
     }
   }
 }

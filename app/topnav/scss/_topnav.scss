@@ -1,8 +1,49 @@
 @import "../../../libs/evennav/evennav";
 
 #for-topNav-bgcolor{
-    background-color: greenyellow;
+  background-color: greenyellow;
 }
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear-bothSide {
+  clear: both;
+}
+
+.is-calc .evennav-item {
+  padding: 0 5px;
+}
+.is-calc .evennav-item:first-child {
+  padding-right: 5px;
+}
+.is-calc .evennav-item:last-child {
+  padding-left: 5px;
+}
+.evennav-btn {
+  background-color: white;
+}
+// // .evennav-btn:link {
+// //   text-decoration: underline;
+// // }
+// .evennav-btn:visited {
+//   color: white;
+//   background-color: green;  
+// }
+.evennav-btn:hover {
+  color: white;
+  background-color: green;
+}
+.evennav-btn:active {
+  color: black;
+  background-color: yellow;
+}
+
 .topNav {
     &-title {
         color: rgb(27.5%, 51%, 70.6%);

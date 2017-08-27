@@ -47,6 +47,7 @@
 
         setEvenWidths(el, opts);
         el.classList.add("is-ready");
+        el.classList.remove("is-calc");
 
         return instance;
     }
