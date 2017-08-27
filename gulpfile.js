@@ -8,6 +8,16 @@ const handlebars = require('gulp-compile-handlebars');
 const rename = require('gulp-rename');
 const webserver = require('gulp-webserver');
 
+const concat = require('gulp-concat');
+
+gulp.task('js', function() {
+  return gulp.src(['./node_modules/verge/verge.js',
+    './libs/evennav/evennav.js',
+    './app/global/js/Utils.js',
+    './app/topnav/js/TopNav.js'])
+    .pipe(concat('app.js'))
+    .pipe(gulp.dest('dist'));
+});
  
 gulp.task('sass', function () {
   return gulp.src('./app/**/*.scss')
