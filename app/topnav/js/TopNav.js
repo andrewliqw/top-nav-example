@@ -13,6 +13,9 @@
     // Changes the upper case characters of '.topNav-subTitle' to pascal case
     function setSubTitle(el) {
         // TODO: use 'utils.toPascalCase' to sanitize the contents of element '.topNav-subTitle'
+        subTitleElement = document.querySelector(".topNav-subTitle");
+        previousText = subTitleElement.textContent;
+        subTitleElement.textContent = utils.toPascalCase(previousText);
     }
 
 
