@@ -13,8 +13,8 @@
     // Changes the upper case characters of '.topNav-subTitle' to pascal case
     function setSubTitle(el) {
         // TODO: use 'utils.toPascalCase' to sanitize the contents of element '.topNav-subTitle'
-        subTitleElement = document.querySelector(".topNav-subTitle");
-        previousText = subTitleElement.textContent;
+        let subTitleElement = document.querySelector(".topNav-subTitle");
+        let previousText = subTitleElement.textContent;
         subTitleElement.textContent = utils.toPascalCase(previousText);
     }
 
@@ -23,6 +23,11 @@
     function setTodayTitle(el) {
         
         // TODO: add today's week day and month name to the element '.topNav-title', using 'utils.getWeekDay' and 'utils.getMonthName'
+        let weekDay = utils.getWeekDay();
+        let monthName = utils.getMonthName();
+        let titleElement = document.querySelector(".topNav-title");
+        let previousText = titleElement.textContent;
+        titleElement.textContent = previousText.replace("--WEEK_DAY_NAME--", weekDay).replace("--MONTH_NAME--", monthName);
     }
 
 
