@@ -4,6 +4,18 @@
   background-color: greenyellow;
 }
 
+@media (min-width: 768px) {
+  .topNav-title {
+    float: left;
+  }
+  .topNav-subTitle {
+    float: right;
+  }
+  .topNav ul {
+    clear: both;
+  }
+}
+
 .float-left {
   float: left;
 }
@@ -48,4 +60,26 @@
     &-title {
         color: rgb(27.5%, 51%, 70.6%);
     }
+}
+
+@media (max-width: 768px) {
+  .topNav ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  .topNav li {
+    // display: block;
+    // width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .topNav li a {
+    background-color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
